@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#090914" />
+  <title>Für Hannah ❤️</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="background" aria-hidden="true">
+    <div class="stars stars-1"></div>
+    <div class="stars stars-2"></div>
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+  </div>
+
+  <main class="app">
+    <section id="intro" class="screen intro-screen active" aria-label="Geburtstagsgeschenk">
+      <div class="intro-content">
+        <p class="eyebrow">Eine kleine Überraschung für dich</p>
+        <h1>Hi Hannah …</h1>
+        <p class="intro-subtitle">Ich habe etwas für dich vorbereitet.</p>
+
+        <button id="gift" class="gift" type="button" aria-label="Geschenk öffnen">
+          <span class="gift-glow"></span>
+          <span class="gift-lid"></span>
+          <span class="gift-box"></span>
+          <span class="gift-ribbon gift-ribbon-v"></span>
+          <span class="gift-ribbon gift-ribbon-h"></span>
+          <span class="gift-bow bow-left"></span>
+          <span class="gift-bow bow-right"></span>
+          <span class="gift-bow bow-center"></span>
+        </button>
+        <p class="tap-hint">Tippe auf das Geschenk ❤️</p>
+      </div>
+    </section>
+
+    <section id="cards" class="screen cards-screen" aria-label="18 Geburtstagskarten">
+      <header class="cards-header">
+        <p class="cards-kicker">19 kleine Dinge für dich</p>
+        <div class="counter"><span id="counterCurrent">1</span> / 19</div>
+        <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+      </header>
+
+      <div id="specialOverlay" class="special-overlay" aria-hidden="true">
+        <div class="special-content">
+          <div class="special-number">10 / 19</div>
+          <p class="special-small">Okay … bei dieser Karte musst du kurz warten.</p>
+          <div class="special-message">
+            <p class="line line-1">Weißt du eigentlich,</p>
+            <p class="line line-2">wie besonders du bist?</p>
+            <p class="line line-3">Wahrscheinlich nicht.</p>
+            <p class="line line-4">Deshalb möchte ich dir heute</p>
+            <p class="line line-5"><strong>19 Dinge</strong> zeigen, die ich an dir liebe. ❤️</p>
+          </div>
+          <button id="specialContinue" class="primary-btn" type="button">Weiter ❤️</button>
+        </div>
+      </div>
+
+      <div id="cardViewport" class="card-viewport">
+        <div id="cardTrack" class="card-track"></div>
+      </div>
+
+      <div class="swipe-hint" id="swipeHint">
+        <span>←</span><span>Wische zur Seite</span><span>→</span>
+      </div>
+      <div class="nav-area">
+        <button id="prevBtn" class="nav-btn" type="button" aria-label="Vorherige Karte">←</button>
+        <button id="nextBtn" class="nav-btn" type="button" aria-label="Nächste Karte">→</button>
+      </div>
+    </section>
+
+    <section id="finale" class="screen finale-screen" aria-label="Alles Gute zum Geburtstag">
+      <div class="final-particles" id="finalParticles" aria-hidden="true"></div>
+      <div class="finale-content">
+        <p class="finale-mini">Für dich, Hannah</p>
+        <div class="big-number">19</div>
+        <div class="years">Jahre <span>❤️</span></div>
+        <div class="final-divider"></div>
+        <p class="birthday-title">Nochmal alles Gute zum Geburtstag!</p>
+        <p class="birthday-text">Ich hoffe, dein 19. Jahr wird genauso wundervoll wie du.</p>
+        <p class="forever">❤️</p>
+        <button id="replayBtn" class="ghost-btn" type="button">Noch einmal ansehen</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
